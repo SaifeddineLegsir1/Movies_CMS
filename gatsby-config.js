@@ -15,6 +15,25 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'WPGraphql',
+        fieldName: 'wpcontent',
+        url: 'http://moviescms.local/graphql',
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['Roboto', 'Oswald'],
+        display: 'swap'
+      }
+    },
+
+    `gatsby-plugin-styled-components`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
