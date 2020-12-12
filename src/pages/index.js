@@ -50,6 +50,7 @@ const IndexPage = () => {
               title
               runningTime
               directorS
+              releaseDate
               cover {
                 altText
                 sourceUrl
@@ -103,8 +104,7 @@ const IndexPage = () => {
                 <p>
                   {movie.title}
                 </p>
-                <p>{movie.directorS}</p>
-                <p>{movie.runningTime} min.</p>
+                <p>{movie.releaseDate}</p>
               </div>
             </Artist>
           ))}
