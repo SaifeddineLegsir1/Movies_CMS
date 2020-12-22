@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     .artist-image {
       position: relative;
       width: 40vw;
-      height: 40vw;
+      height: 50vw;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         height: 90vw;
@@ -64,10 +64,11 @@ export const Wrapper = styled.div`
       }
 
       h2 {
+        color: white;
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         font-size: 4rem;
-        border-bottom: ${COLORS.WHITE} solid 6px;
+        border-bottom: ${COLORS.TERTIARY} solid 6px;
         padding-bottom: 1rem;
         margin-left: auto;
         margin-bottom: 0.5rem;
