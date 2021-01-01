@@ -9,7 +9,7 @@ import {
   BottomEdgeDown,
   BottomEdgeUp,
   Artist,
-} from "./pageStyles/pageStyles"
+} from "../PageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const IndexPage = () => {
