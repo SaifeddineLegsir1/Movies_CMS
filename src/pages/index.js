@@ -6,11 +6,8 @@ import SEO from "../components/Seo"
 import {
   Wrapper,
   Image,
-  BottomEdgeDown,
-  BottomEdgeUp,
   Artist,
-} from "../PageStyles/pageStyles"
-import { COLORS } from "../constants"
+} from "../PageStyles/pageStyles" 
 
 const IndexPage = () => {
   const {
@@ -36,7 +33,7 @@ const IndexPage = () => {
               sourceUrl
               imageFile {
                 childImageSharp {
-                  fluid(quality: 100) {
+                  fluid(quality: 50) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -56,7 +53,7 @@ const IndexPage = () => {
                 sourceUrl
                 imageFile {
                   childImageSharp {
-                    fluid(quality: 100, grayscale: true){
+                    fluid(quality: 50, grayscale: true){
                     ...GatsbyImageSharpFluid_withWebp
                     }
                   }
@@ -85,11 +82,11 @@ const IndexPage = () => {
           <p className="header-title">{title}</p>
           <p className="header-description">{kleineBeschrijving}</p>
         </div>
-        <BottomEdgeDown color={COLORS.BLACK} />
+       
       </div>
       <div className="description">
         <p>{kleineBeschrijving}</p>
-        <BottomEdgeUp color={COLORS.PRIMARY} />
+        
       </div>
       <div className="artists">
         <h2>Featured Movies</h2>

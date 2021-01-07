@@ -40,6 +40,9 @@ const ArtistTemplate = ({
                 {movie.title}
               </h2>
               <p className="description">{movie.description}</p>
+              <p className="details"> Director: {movie.directorS}</p>
+              <p className="details">Releasedate: {movie.releaseDate}</p>
+              <p className="details">Duration: {movie.runningTime} min</p>
 
             </div>
           </div>
@@ -68,7 +71,7 @@ query ($id: ID!) {
             sourceUrl
             imageFile {
               childImageSharp {
-                fluid(quality: 100) {
+                fluid(quality: 50) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

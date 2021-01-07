@@ -108,6 +108,16 @@ export const Wrapper = styled.div`
         }
       }
 
+
+      .details {
+        font-size: 1.2rem;
+        color: ${COLORS.WHITE};
+
+        @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
+          font-size: 1rem;
+        }
+      }
+
       .info {
         font-family: 2rem;
         text-transform: uppercase;

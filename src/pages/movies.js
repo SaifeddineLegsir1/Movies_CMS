@@ -6,8 +6,6 @@ import SEO from "../components/Seo"
 import {
   Wrapper,
   Image,
-  BottomEdgeDown,
-  BottomEdgeUp,
   Artist,
 } from "../PageStyles/pageStyles"
 import { COLORS } from "../constants"
@@ -30,7 +28,7 @@ const MoviesPage = () => {
         bannerFoto {
           imageFile {
             childImageSharp {
-              fluid(quality: 100) {
+              fluid(quality: 50) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -54,7 +52,7 @@ const MoviesPage = () => {
                 sourceUrl
                 imageFile {
                   childImageSharp {
-                    fluid(quality: 100, grayscale: true){
+                    fluid(quality: 50, grayscale: true){
                         ...GatsbyImageSharpFluid_withWebp
                     }
                   }
@@ -77,11 +75,11 @@ return (
             fluid={bannerFoto.imageFile.childImageSharp.fluid}
             alt={bannerFoto.altText}  
           />
-          <BottomEdgeDown color={COLORS.SECONDARY} />
+          
         </div>
         <div className="description">
           <p>{kleineBeschrijving}</p>
-          <BottomEdgeUp color={COLORS.BLACK} />
+          
         </div>
         <div className="artists">
           <h2>Our Movies</h2> 
