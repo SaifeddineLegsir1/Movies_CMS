@@ -4,7 +4,9 @@ import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
   background-color: ${COLORS.BLACK};
-  margin-top: 100px;
+
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
 
   .artist-container {
     display: flex;
@@ -69,7 +71,7 @@ export const Wrapper = styled.div`
         font-size: 4rem;
         border-bottom: ${COLORS.TERTIARY} solid 6px;
         padding-bottom: 1rem;
-        margin-left: auto;
+        
         margin-bottom: 0.5rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {

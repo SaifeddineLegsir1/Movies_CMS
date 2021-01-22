@@ -33,7 +33,7 @@ const IndexPage = () => {
               sourceUrl
               imageFile {
                 childImageSharp {
-                  fluid(quality: 50) {
+                  fluid(quality: 40) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -53,7 +53,7 @@ const IndexPage = () => {
                 sourceUrl
                 imageFile {
                   childImageSharp {
-                    fluid(quality: 50, grayscale: true){
+                    fluid(quality: 40, grayscale: false){
                     ...GatsbyImageSharpFluid_withWebp
                     }
                   }

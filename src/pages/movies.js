@@ -28,7 +28,7 @@ const MoviesPage = () => {
         bannerFoto {
           imageFile {
             childImageSharp {
-              fluid(quality: 50) {
+              fluid(quality: 40) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -52,7 +52,7 @@ const MoviesPage = () => {
                 sourceUrl
                 imageFile {
                   childImageSharp {
-                    fluid(quality: 50, grayscale: true){
+                    fluid(quality: 40, grayscale: false){
                         ...GatsbyImageSharpFluid_withWebp
                     }
                   }

@@ -10,7 +10,7 @@ const OverlayMenu = ({handleOverlayMenu, menuOpen}) =>{
       query{
         logo: file(relativePath: {eq: "logo.png"}) {
           childImageSharp {
-            fixed(quality: 50, width: 200){
+            fixed(quality: 40, width: 200){
               ...GatsbyImageSharpFixed_withWebp
             }
           }
