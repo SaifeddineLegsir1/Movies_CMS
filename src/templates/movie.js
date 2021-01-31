@@ -19,7 +19,7 @@ const ArtistTemplate = ({
   
     return (
       <Layout>
-        <SEO title="Artist" />
+        <SEO title="Movie" />
         <Wrapper>
           <div className="artist-container">
             <div className="artist-image">
